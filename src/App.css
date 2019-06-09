@@ -1,33 +1,147 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background-image: url(./test1_assets/background.png);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-header {
+  height: 10vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.App-header button {
+  height: 45%;
+  max-width: 100px;
+  background: linear-gradient(grey, black);
+  color: white;
+  border-radius: 5px;
+  border-color: grey;
+  font-weight: bold;
+  font-size: 1em;
+  margin-left: 10px;
+}
+.App-header h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.App-header img {
+  height: 45%;
+  margin-right: 10px;
+}
+.main-content {
+  height: 90vh;
+  padding: 10px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.main-content img {
+  width: 100%;
+  height: auto;
+  border: solid 3px white;
+  /* margin-right: 10px; */
+}
+.contact-info h3 {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+.contact-info p {
+  color: lightblue;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 1.1em;
+}
+.contact-info a {
+  color: white;
+  font-size: 1.1em;
+}
+
+.more-info ul {
+  list-style-type: none;
+  padding: 0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.more-info ul li {
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  background: linear-gradient(
+    0deg,
+    rgb(226, 241, 255) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-bottom: solid 1px white;
+  border-top: solid 1px lightgrey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer {
+  height: 10vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 500px) {
+  .App-header {
+    justify-content: space-between;
   }
-  to {
-    transform: rotate(360deg);
+  .contact-info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .App-header button {
+    margin-left: 25px;
+  }
+  .App-header img {
+    margin-right: 25px;
+  }
+  .main-content {
+    padding: calc(30px + 3%);
+  }
+}
+@media screen and (min-width: 900px) {
+  .contact-info {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-height: 810px) {
+  .main-content {
+    height: 80vh;
+  }
+  .contact-info h3 {
+    font-size: 1.5em;
+  }
+  .contact-info p {
+    font-size: 1.4em;
+  }
+  .contact-info a {
+    font-size: 1.3em;
+  }
+}
+@media screen and (min-height: 1025px) {
+  .App-header button {
+    font-size: 1.5em;
+  }
+  .App-header h3 {
+    font-size: 1.6em;
+  }
+  .contact-info {
+    font-size: 1.6em;
+  }
+  .more-info {
+    font-size: 1.6em;
   }
 }
