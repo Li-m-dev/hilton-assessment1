@@ -5,7 +5,7 @@ import "./App.css";
 
 function App() {
   return (
-    <>
+    <div className="app">
       <header className="App-header">
         <button>&lt; Back </button>
         <h3>Hotel Details</h3>
@@ -39,7 +39,7 @@ function App() {
         </div>
       </div>
       <footer>Welcome to Hilton!</footer>
-    </>
+    </div>
   );
 }
 
